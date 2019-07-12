@@ -32,7 +32,7 @@ namespace RandomThingsApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "RandomThings API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "RandomThings API V1");
             });
             app.UseMvc();
         }
