@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RandomThingsApi</name>
+    </assembly>
+    <members>
+        <member name="M:RandomThingsApi.Controllers.RandomController.GetLunch">
+            <summary>
+            Retrieve Lunch
+            </summary>
+            <remarks>Yummy lunch!</remarks>
+            <response code="200">Lunch is served</response>
+        </member>
+        <member name="M:RandomThingsApi.Controllers.RandomController.GetMeth">
+            <summary>
+            Gets some meth
+            </summary>
+            <remarks>“Say my name.”</remarks>
+            <response code="200">"La familia es todo"</response>
+        </member>
+        <member name="M:RandomThingsApi.Controllers.RandomController.GetGuns">
+            <summary>
+            Buy some guns
+            </summary>
+            <remarks>“Oh, the new MP-5. Would you like a silencer for that?”</remarks>
+            <response code="200">"Guns Guns Guns!!!"</response>
+        </member>
+    </members>
+</doc>
