@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using RandomThingsApi.Swagger;
 using Swashbuckle.AspNetCore.Swagger;
 using System.IO;
 
@@ -14,11 +15,13 @@ namespace RandomThingsApi
         {
             services.AddSwaggerGen(c =>
             {
+                c.DocumentFilter<SwaggerBaseFilter>();
                 c.SwaggerDoc("v1",
                     new Info
                     {
                         Title = "RandomThings API",
-                        Version = "v1"
+                        Version = "v1",
+
                     }
                 );
                 var filePath = Path.Combine(System.AppContext.BaseDirectory, "RandomThingsApi.xml");
